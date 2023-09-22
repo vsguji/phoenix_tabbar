@@ -1,0 +1,19 @@
+library phoenix_tabbar;
+
+// bottom
+export 'bottom/bottom_tab_bar_item.dart';
+export 'bottom/bottom_tab_bar_main.dart';
+// config
+export 'config/tabbar_config.dart';
+// extension
+export 'extension/tabbar_default_config_utils.dart';
+export 'extension/tabbar_total_config.dart';
+// indicator
+export 'indicator/custom_width_indicator.dart';
+export 'indicator/fixed_underline_decoration.dart';
+export 'indicator/triangle_decoration.dart';
+// normal
+export 'normal/sub_switch_title.dart';
+export 'normal/switch_title.dart';
+export 'normal/tab_bar.dart';
+export 'normal/tabbar_controller.dart';
