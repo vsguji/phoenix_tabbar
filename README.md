@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# phoenix_tabbar
-Flutter 基础组件:tabbar
-=======
 <!--
  * @Author: lipeng 1162423147@qq.com
  * @Date: 2023-09-21 22:41:19
@@ -44,4 +40,3 @@ const like = 'sample';
 ## Additional information
 
 phoenix 将做为企业级基础组件:TabBar,提供项目支持。
->>>>>>> d8a51ee ([new] 新建)

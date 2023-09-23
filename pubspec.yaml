@@ -1,6 +1,6 @@
 name: phoenix_tabbar
 description: phoenix 将做为企业级基础组件:TabBar,提供项目支持。
-version: 1.0.0
+version: 1.0.1
 homepage: 'https://github.com/vsguji/phoenix_tabbar.git'
 
 environment:
@@ -10,7 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  phoenix_base: ^1.0.2
+  phoenix_base: ^1.0.6
   phoenix_line: ^1.0.0 
   phoenix_popup: ^1.0.0
 

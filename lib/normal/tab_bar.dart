@@ -326,8 +326,8 @@ class PhoenixTabBarState extends State<PhoenixTabBar> {
               ],
             ),
             child: !_brnTabbarController.isShow
-                ? BrunoTools.getAssetImage(BaseAsset.iconTriangleDown)
-                : BrunoTools.getAssetImageWithBandColor(
+                ? PhoenixTools.getAssetImage(BaseAsset.iconTriangleDown)
+                : PhoenixTools.getAssetImageWithBandColor(
                     BaseAsset.iconTriangleUp)),
       ),
     );
