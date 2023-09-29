@@ -5,6 +5,7 @@ import 'package:phoenix_popup/measure_size.dart';
 import 'package:phoenix_tabbar/extension/tabbar_total_config.dart';
 
 import '../config/tabbar_config.dart';
+import '../extension/tabbar_assets.dart';
 import '../indicator/custom_width_indicator.dart';
 import 'tabbar_controller.dart';
 
@@ -326,9 +327,11 @@ class PhoenixTabBarState extends State<PhoenixTabBar> {
               ],
             ),
             child: !_brnTabbarController.isShow
-                ? PhoenixTools.getAssetImage(BaseAsset.iconTriangleDown)
+                ? PhoenixTools.getAssetImage(TabbarAssets.iconTriangleDown,
+                    package: 'phoenix_tabbar')
                 : PhoenixTools.getAssetImageWithBandColor(
-                    BaseAsset.iconTriangleUp)),
+                    TabbarAssets.iconTriangleUp,
+                    package: 'phoenix_tabbar')),
       ),
     );
   }
