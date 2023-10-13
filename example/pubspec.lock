@@ -132,36 +132,92 @@ packages:
     source: hosted
     version: "5.4.0"
   phoenix_base:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: phoenix_base
-      sha256: "8c9103b6234015be7340c7b051559a8e8d75c3ad14e9f4eed96b1a862fd99746"
+      sha256: d99e2d39d52cb1d9bda89e7caf61a5185ace46eea1e0ce0cfb79a1e912c32b70
       url: "https://pub.dev"
     source: hosted
-    version: "1.0.6"
+    version: "1.1.9"
+  phoenix_btn:
+    dependency: "direct main"
+    description:
+      name: phoenix_btn
+      sha256: "65864e1d29e076eb7c92c11fdc611747fd0d6f9fc6f29d6f20dc58d3c0316fd2"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.8"
+  phoenix_card:
+    dependency: "direct main"
+    description:
+      name: phoenix_card
+      sha256: fec9194df5c293a1a56809db7aec9cc82115397aa1be411d6d75c8702cd0505e
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.3"
   phoenix_line:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: phoenix_line
       sha256: "0a0ed1745f7e96e9114294dac8d24e9dfead76eac60b1bb9b5e989942b929a79"
       url: "https://pub.dev"
     source: hosted
     version: "1.0.0"
+  phoenix_navbar:
+    dependency: "direct main"
+    description:
+      name: phoenix_navbar
+      sha256: "084615016c35773757b8d782226376878a41048e8d3562f9f5d1afb3c0d6fe93"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.4"
   phoenix_popup:
     dependency: transitive
     description:
       name: phoenix_popup
-      sha256: a26ca6e3339bb80a458c0dd9ed70fe9145ee6542fa3162df8a3531119f7aa350
+      sha256: d809b4f62f2b0fae56de816ec868f5e6860bd5734d53971f061dbe1b35d75e70
       url: "https://pub.dev"
     source: hosted
-    version: "1.0.0"
+    version: "1.1.8"
+  phoenix_radio:
+    dependency: transitive
+    description:
+      name: phoenix_radio
+      sha256: "386ba02fd44d444d2416020075550eb976cc39a55ad61713c25b98b2684ce451"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.7"
   phoenix_tabbar:
     dependency: "direct main"
     description:
       path: ".."
       relative: true
     source: path
+    version: "1.0.3"
+  phoenix_tag:
+    dependency: "direct main"
+    description:
+      name: phoenix_tag
+      sha256: "2d3a9424a7654e8a4320afd44caf5f4f8b33c50372dcd1a6799b59b3ff8c3ea4"
+      url: "https://pub.dev"
+    source: hosted
     version: "1.0.2"
+  phoenix_text:
+    dependency: transitive
+    description:
+      name: phoenix_text
+      sha256: "6a59b8465eb28a25a3424133d359b9bf140bfaa725674909e706b5b261125ebe"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.0"
+  phoenix_toast:
+    dependency: "direct main"
+    description:
+      name: phoenix_toast
+      sha256: "7cfd019aff4c789ea7e23734d43367a4332fc27efe2b6ee5d51ab6447f822a9f"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.0"
   sky_engine:
     dependency: transitive
     description: flutter

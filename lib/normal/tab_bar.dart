@@ -93,7 +93,7 @@ class PhoenixTabBar extends StatefulWidget {
   final VoidCallback? onMorePop;
 
   /// 更多弹框关闭控制器
-  final BrnCloseWindowController? closeController;
+  final CloseWindowController? closeController;
 
   /// tag间距
   final double? tagSpacing;
@@ -191,9 +191,9 @@ class PhoenixTabBarState extends State<PhoenixTabBar> {
   late PhoenixTabbarController _brnTabbarController;
 
   /// BrnTabBarBadge展开更多关闭处理控制器
-  BrnCloseWindowController? _closeWindowController;
+  CloseWindowController? _closeWindowController;
 
-  PhoenixTabBarState(BrnCloseWindowController? closeController) {
+  PhoenixTabBarState(CloseWindowController? closeController) {
     _closeWindowController = closeController;
   }
 

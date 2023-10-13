@@ -53,7 +53,7 @@ class CloseWindowEvent {
 ///
 /// 提供给外部用于控制更多弹框的关闭
 ///
-class BrnCloseWindowController {
+class CloseWindowController {
   ///
   /// 展开更多弹框是否显示
   ///
