@@ -14,7 +14,7 @@ const double _kBottomMargin = 0.0;
 const double _kMiddleInterval = 4.0;
 
 /// tabBar显示状态
-enum BrnBottomTabBarDisplayType {
+enum BottomTabBarDisplayType {
   /// 固定显示状态
   fixed,
 
@@ -31,7 +31,7 @@ class BottomTabBar extends StatefulWidget {
     required this.items,
     this.onTap,
     this.currentIndex = 0,
-    this.type = BrnBottomTabBarDisplayType.fixed,
+    this.type = BottomTabBarDisplayType.fixed,
     this.fixedColor,
     this.iconSize = 24.0,
     this.isAnimation = false,
@@ -64,7 +64,7 @@ class BottomTabBar extends StatefulWidget {
   final int currentIndex;
 
   /// 底部选项卡的枚举类型fixed/shifting 默认为fixed
-  final BrnBottomTabBarDisplayType type;
+  final BottomTabBarDisplayType type;
 
   /// 底部Tab所选中时的颜色
   final Color? fixedColor;
@@ -187,9 +187,9 @@ class _BottomTabBarState extends State<BottomTabBar>
 
     if (widget.currentIndex != oldWidget.currentIndex) {
       switch (widget.type) {
-        case BrnBottomTabBarDisplayType.fixed:
+        case BottomTabBarDisplayType.fixed:
           break;
-        case BrnBottomTabBarDisplayType.shifting:
+        case BottomTabBarDisplayType.shifting:
           _pushCircle(widget.currentIndex);
           break;
       }
@@ -209,7 +209,7 @@ class _BottomTabBarState extends State<BottomTabBar>
         MaterialLocalizations.of(context);
     final List<Widget> children = <Widget>[];
     switch (widget.type) {
-      case BrnBottomTabBarDisplayType.fixed:
+      case BottomTabBarDisplayType.fixed:
         final ThemeData themeData = Theme.of(context);
         final TextTheme textTheme = themeData.textTheme;
         Color? themeColor;
@@ -248,7 +248,7 @@ class _BottomTabBarState extends State<BottomTabBar>
           );
         }
         break;
-      case BrnBottomTabBarDisplayType.shifting:
+      case BottomTabBarDisplayType.shifting:
         for (int i = 0; i < widget.items.length; i += 1) {
           children.add(
             _BottomNavigationTile(
@@ -299,9 +299,9 @@ class _BottomTabBarState extends State<BottomTabBar>
         math.max(MediaQuery.of(context).padding.bottom - _kBottomMargin, 0.0);
     Color? backgroundColor;
     switch (widget.type) {
-      case BrnBottomTabBarDisplayType.fixed:
+      case BottomTabBarDisplayType.fixed:
         break;
-      case BrnBottomTabBarDisplayType.shifting:
+      case BottomTabBarDisplayType.shifting:
         backgroundColor = _backgroundColor;
         break;
     }
@@ -369,7 +369,7 @@ class _BottomNavigationTile extends StatelessWidget {
     this.badgeColor,
   });
 
-  final BrnBottomTabBarDisplayType type;
+  final BottomTabBarDisplayType type;
   final BottomTabBarItem item;
   final Animation<double> animation;
   final double iconSize;
@@ -391,11 +391,11 @@ class _BottomNavigationTile extends StatelessWidget {
     late int size;
     Widget? label;
     switch (type) {
-      case BrnBottomTabBarDisplayType.fixed:
+      case BottomTabBarDisplayType.fixed:
         size = 1;
         label = _buildFixedLabel();
         break;
-      case BrnBottomTabBarDisplayType.shifting:
+      case BottomTabBarDisplayType.shifting:
         size = (flex! * 1000.0).round();
         label = _buildShiftingLabel();
         break;
@@ -425,11 +425,11 @@ class _BottomNavigationTile extends StatelessWidget {
     double? tweenStart;
     Color? iconColor;
     switch (type) {
-      case BrnBottomTabBarDisplayType.fixed:
+      case BottomTabBarDisplayType.fixed:
         tweenStart = 8.0;
         iconColor = colorTween?.evaluate(animation);
         break;
-      case BrnBottomTabBarDisplayType.shifting:
+      case BottomTabBarDisplayType.shifting:
         tweenStart = 16.0;
         iconColor = selected
             ? BaseThemeConfig.instance.getConfig().commonConfig.brandPrimary

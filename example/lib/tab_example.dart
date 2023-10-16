@@ -3,16 +3,15 @@ import 'package:phoenix_navbar/phoenix_navbar.dart';
 import 'package:phoenix_tabbar/phoenix_tabbar.dart';
 import 'package:phoenix_toast/phoenix_toast.dart';
 
-import 'brn_tabbar_sticky_example.dart';
+import 'tabbar_sticky_example.dart';
 import 'list_item.dart';
 
-class BrnTabExample extends StatefulWidget {
+class TabExample extends StatefulWidget {
   @override
-  _BrnTabExampleState createState() => _BrnTabExampleState();
+  _TabExampleState createState() => _TabExampleState();
 }
 
-class _BrnTabExampleState extends State<BrnTabExample>
-    with TickerProviderStateMixin {
+class _TabExampleState extends State<TabExample> with TickerProviderStateMixin {
   CloseWindowController? closeWindowController;
 
   @override
@@ -36,37 +35,37 @@ class _BrnTabExampleState extends State<BrnTabExample>
                   title: "BrnTabBarBadge实现",
                   isShowLine: false,
                 ),
-                Divider(),
+                const Divider(),
                 Center(
                   child: OutlinedButton(
                     onPressed: () {
                       Navigator.of(context)
                           .push(MaterialPageRoute(builder: (context) {
-                        return BrnTabbarStickyExample();
+                        return TabbarStickyExample();
                       }));
                     },
-                    child: Text("Tabbar点击自动收起example"),
+                    child: const Text("Tabbar点击自动收起example"),
                   ),
                 ),
-                Divider(),
+                const Divider(),
                 _createExpandedMoreTabbarWidgets(),
-                Divider(),
+                const Divider(),
                 _createStableTabbar4Widgets(),
-                Divider(),
+                const Divider(),
                 _createStableTabbarWidgets(),
-                Divider(),
+                const Divider(),
                 _createTabbarBadgeWidgets(),
-                Divider(),
+                const Divider(),
                 _createStableTabbarBadgeWidgets(),
-                Divider(),
+                const Divider(),
                 _createDividerTabbarWidgets(),
-                Divider(),
+                const Divider(),
                 _createCustomTabbarWidgets(),
-                Divider(),
+                const Divider(),
                 _createTopTabbarWidgets(),
-                Divider(),
+                const Divider(),
                 _createTopTabbarCountWidgets(),
-                Divider(),
+                const Divider(),
                 _createOriginWidgets(),
               ],
             ),
@@ -132,8 +131,8 @@ class _BrnTabExampleState extends State<BrnTabExample>
       tabs: tabs,
       mode: BrnTabBarBadgeMode.origin,
       isScroll: false,
-      labelPadding: EdgeInsets.only(left: 20, right: 12),
-      indicatorPadding: EdgeInsets.only(left: 10),
+      labelPadding: const EdgeInsets.only(left: 20, right: 12),
+      indicatorPadding: const EdgeInsets.only(left: 10),
       onTap: (state, index) {
         PhoenixToast.show("点击了", context);
       },
@@ -230,8 +229,8 @@ class _BrnTabExampleState extends State<BrnTabExample>
       controller: tabController,
       tabs: tabs,
       hasIndex: true,
-      labelColor: Color(0xFF21C1B5),
-      indicatorColor: Color(0xFF21C1B5),
+      labelColor: const Color(0xFF21C1B5),
+      indicatorColor: const Color(0xFF21C1B5),
       hasDivider: true,
       onTap: (state, index) {},
     );
@@ -248,8 +247,8 @@ class _BrnTabExampleState extends State<BrnTabExample>
       controller: tabController,
       tabs: tabs,
       hasIndex: true,
-      labelColor: Color(0xFF21C1B5),
-      indicatorColor: Color(0xFF21C1B5),
+      labelColor: const Color(0xFF21C1B5),
+      indicatorColor: const Color(0xFF21C1B5),
       hasDivider: true,
       onTap: (state, index) {},
     );
@@ -273,8 +272,8 @@ class _BrnTabExampleState extends State<BrnTabExample>
       tabs: tabs,
       mode: BrnTabBarBadgeMode.origin,
       isScroll: false,
-      labelPadding: EdgeInsets.only(left: 20, right: 12),
-      indicatorPadding: EdgeInsets.only(left: 10),
+      labelPadding: const EdgeInsets.only(left: 20, right: 12),
+      indicatorPadding: const EdgeInsets.only(left: 10),
       onTap: (state, index) {},
     );
   }

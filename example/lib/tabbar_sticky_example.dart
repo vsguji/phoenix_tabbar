@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:phoenix_navbar/phoenix_navbar.dart';
 import 'package:phoenix_tabbar/phoenix_tabbar.dart';
 
-class BrnTabbarStickyExample extends StatefulWidget {
+class TabbarStickyExample extends StatefulWidget {
   @override
-  _BrnTabbarStickyExampleState createState() => _BrnTabbarStickyExampleState();
+  _TabbarStickyExampleState createState() => _TabbarStickyExampleState();
 }
 
-class _BrnTabbarStickyExampleState extends State<BrnTabbarStickyExample>
+class _TabbarStickyExampleState extends State<TabbarStickyExample>
     with SingleTickerProviderStateMixin {
   TabController? tabController;
 
@@ -73,14 +73,14 @@ class _BrnTabbarStickyExampleState extends State<BrnTabbarStickyExample>
               ];
             },
             body: TabBarView(
-              controller: this.tabController,
-              children: <Widget>[
-                const Center(child: Text('业务一')),
-                const Center(child: Text('业务二')),
-                const Center(child: Text('业务三')),
-                const Center(child: Text('业务四')),
-                const Center(child: Text('业务五')),
-                const Center(child: Text('业务六')),
+              controller: tabController,
+              children: const <Widget>[
+                Center(child: Text('业务一')),
+                Center(child: Text('业务二')),
+                Center(child: Text('业务三')),
+                Center(child: Text('业务四')),
+                Center(child: Text('业务五')),
+                Center(child: Text('业务六')),
               ],
             ),
           ),
